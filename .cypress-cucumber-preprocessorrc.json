@@ -1,0 +1,6 @@
+{
+  "stepDefinitions": "cypress/e2e/stepDefinitions/**/*.{js,ts}",
+  "features": "cypress/e2e/**/*.feature",
+  "html": "mochawesomeReports/cucumber-report.html",
+  "json": "mochawesomeReports/cucumber-report.json"
+}

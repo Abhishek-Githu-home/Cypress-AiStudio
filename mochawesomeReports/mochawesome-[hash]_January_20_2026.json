@@ -1,0 +1,290 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 10,
+    "passes": 7,
+    "pending": 0,
+    "failures": 3,
+    "start": "2026-01-20T06:17:28.655Z",
+    "end": "2026-01-20T06:18:45.460Z",
+    "duration": 76805,
+    "testsRegistered": 10,
+    "passPercent": 70,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "320982c3-0888-49d7-ac3d-b9582f9a338a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\demo.cy.js",
+      "file": "cypress\\e2e\\demo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "71f50ba1-2876-4fe6-b6ad-0cf23600ef1b",
+          "title": "Cypress Framework Demo - Page Object Model & Custom Commands",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should verify page title is accessible",
+              "fullTitle": "Cypress Framework Demo - Page Object Model & Custom Commands Should verify page title is accessible",
+              "timedOut": null,
+              "duration": 10934,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.title() - Gets the title of the page\n// .should('exist') - Assertion that title exists\ncy.title().should('exist');\n// Assertion: Title should not be empty\ncy.title().should('not.be.empty');",
+              "err": {},
+              "uuid": "e9d08d70-063c-434d-a22d-d14865e1199a",
+              "parentUUID": "71f50ba1-2876-4fe6-b6ad-0cf23600ef1b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should verify logo is visible on homepage",
+              "fullTitle": "Cypress Framework Demo - Page Object Model & Custom Commands Should verify logo is visible on homepage",
+              "timedOut": null,
+              "duration": 12137,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// cy.get() - Selects logo element from the page\n// .should('be.visible') - Assertion that logo is visible\ncy.get('[data-cy=\"mmt-logo\"]').should('be.visible');\n// Assertion: Logo should have correct attributes\ncy.get('[data-cy=\"mmt-logo\"]').should('have.attr', 'src');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-cy=\"mmt-logo\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-cy=\"mmt-logo\"]`, but never found it.\n    at Context.eval (webpack://cypress-aistudio/./cypress/e2e/demo.cy.js:35:35)",
+                "diff": null
+              },
+              "uuid": "2b65e5b6-e590-44b1-a768-161a4e63bab8",
+              "parentUUID": "71f50ba1-2876-4fe6-b6ad-0cf23600ef1b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should verify search functionality is present",
+              "fullTitle": "Cypress Framework Demo - Page Object Model & Custom Commands Should verify search functionality is present",
+              "timedOut": null,
+              "duration": 13319,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// cy.get() - Selects the search button on homepage\n// .should('exist') - Assertion that search button exists\ncy.get('[data-cy=\"submit\"]').should('exist');\n// Assertion: Search button should be enabled\ncy.get('[data-cy=\"submit\"]').should('be.enabled');\n// Assertion: Search button should contain text\ncy.get('[data-cy=\"submit\"]').should('contain', 'Search');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<p.makeFlex.vrtlCenter.>' to be 'enabled'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<p.makeFlex.vrtlCenter.>' to be 'enabled'\n    at Context.eval (webpack://cypress-aistudio/./cypress/e2e/demo.cy.js:51:33)",
+                "diff": null
+              },
+              "uuid": "c24a9c00-48dd-40e1-90e9-8aebd6e6ccc7",
+              "parentUUID": "71f50ba1-2876-4fe6-b6ad-0cf23600ef1b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should verify navigation menu items are present",
+              "fullTitle": "Cypress Framework Demo - Page Object Model & Custom Commands Should verify navigation menu items are present",
+              "timedOut": null,
+              "duration": 13660,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// cy.get() - Selects all navigation items\n// .should('be.visible') - Assertion that menu is visible\ncy.get('nav').should('exist');\n// Assertion: Navigation should contain at least one link\ncy.get('a[data-cy*=\"item-wrapper\"]').should('have.length.greaterThan', 0);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `a[data-cy*=\"item-wrapper\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `a[data-cy*=\"item-wrapper\"]`, but never found it.\n    at Context.eval (webpack://cypress-aistudio/./cypress/e2e/demo.cy.js:67:41)",
+                "diff": null
+              },
+              "uuid": "445825ab-f562-4dfb-bf3d-98f6ce698009",
+              "parentUUID": "71f50ba1-2876-4fe6-b6ad-0cf23600ef1b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should verify footer is present with content",
+              "fullTitle": "Cypress Framework Demo - Page Object Model & Custom Commands Should verify footer is present with content",
+              "timedOut": null,
+              "duration": 2045,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.get() - Selects footer element\n// .should('exist') - Assertion that footer exists\ncy.get('footer').should('exist');\n// Assertion: Footer should be visible\ncy.get('footer').should('be.visible');",
+              "err": {},
+              "uuid": "397974ad-535d-4b82-b4df-a238e00ecd48",
+              "parentUUID": "71f50ba1-2876-4fe6-b6ad-0cf23600ef1b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should verify currency symbol is displayed",
+              "fullTitle": "Cypress Framework Demo - Page Object Model & Custom Commands Should verify currency symbol is displayed",
+              "timedOut": null,
+              "duration": 3705,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.get() - Selects elements containing currency\n// .should('be.visible') - Assertion for visibility\ncy.get('body').should('contain.text', '₹');\n// Assertion: Page should contain Indian rupee symbol\ncy.contains('₹').should('be.visible');",
+              "err": {},
+              "uuid": "dfeadae3-beba-4fe0-84d8-1ec8217a2c74",
+              "parentUUID": "71f50ba1-2876-4fe6-b6ad-0cf23600ef1b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should verify viewport dimensions",
+              "fullTitle": "Cypress Framework Demo - Page Object Model & Custom Commands Should verify viewport dimensions",
+              "timedOut": null,
+              "duration": 2059,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.viewport() - Sets custom viewport size\ncy.viewport('iphone-x');\n// Assertion: Page should still load in mobile view\ncy.get('body').should('be.visible');\n// Revert to desktop\ncy.viewport(1280, 720);\ncy.get('body').should('be.visible');",
+              "err": {},
+              "uuid": "b04880be-4a37-4140-9d17-469a8a59507a",
+              "parentUUID": "71f50ba1-2876-4fe6-b6ad-0cf23600ef1b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should load page without critical errors",
+              "fullTitle": "Cypress Framework Demo - Page Object Model & Custom Commands Should load page without critical errors",
+              "timedOut": null,
+              "duration": 1847,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Assertion: Page should be visible without errors\ncy.get('body', {\n  timeout: 10000\n}).should('be.visible');\n// Assertion: Body should have content\ncy.get('body').should('not.be.empty');\n// Assertion: No redirect should have occurred\ncy.url().should('include', 'makemytrip');",
+              "err": {},
+              "uuid": "ee958862-5aba-4ab2-ba47-8d8f7fc3b703",
+              "parentUUID": "71f50ba1-2876-4fe6-b6ad-0cf23600ef1b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should display correctly on different screen sizes",
+              "fullTitle": "Cypress Framework Demo - Page Object Model & Custom Commands Should display correctly on different screen sizes",
+              "timedOut": null,
+              "duration": 1671,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Test on tablet\ncy.viewport('ipad-2');\ncy.get('body').should('be.visible');\n// Test on mobile\ncy.viewport('iphone-xr');\ncy.get('body').should('be.visible');\n// Test on desktop\ncy.viewport(1920, 1080);\ncy.get('body').should('be.visible');",
+              "err": {},
+              "uuid": "d5586d45-906b-4e7d-a212-55fa835945bf",
+              "parentUUID": "71f50ba1-2876-4fe6-b6ad-0cf23600ef1b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should load page within acceptable time",
+              "fullTitle": "Cypress Framework Demo - Page Object Model & Custom Commands Should load page within acceptable time",
+              "timedOut": null,
+              "duration": 3003,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Measure performance\nconst startTime = Date.now();\n// Visit page\ncy.visit('/');\n// Wait for page to be ready\ncy.get('body').should('be.visible');\n// Calculate load time\nconst loadTime = Date.now() - startTime;\n// Assertion: Page should load within 30 seconds\nexpect(loadTime).to.be.lessThan(30000);",
+              "err": {},
+              "uuid": "ba03360c-164e-4b3f-92dd-28d0c24e7027",
+              "parentUUID": "71f50ba1-2876-4fe6-b6ad-0cf23600ef1b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e9d08d70-063c-434d-a22d-d14865e1199a",
+            "397974ad-535d-4b82-b4df-a238e00ecd48",
+            "dfeadae3-beba-4fe0-84d8-1ec8217a2c74",
+            "b04880be-4a37-4140-9d17-469a8a59507a",
+            "ee958862-5aba-4ab2-ba47-8d8f7fc3b703",
+            "d5586d45-906b-4e7d-a212-55fa835945bf",
+            "ba03360c-164e-4b3f-92dd-28d0c24e7027"
+          ],
+          "failures": [
+            "2b65e5b6-e590-44b1-a768-161a4e63bab8",
+            "c24a9c00-48dd-40e1-90e9-8aebd6e6ccc7",
+            "445825ab-f562-4dfb-bf3d-98f6ce698009"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 64380,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome-[hash]",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesomeReports",
+        "reportFilename": "mochawesome-[hash]",
+        "html": true,
+        "json": true,
+        "timestamp": "longDate"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

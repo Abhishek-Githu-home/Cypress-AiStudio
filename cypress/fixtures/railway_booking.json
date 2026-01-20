@@ -1,0 +1,54 @@
+{
+  "passengers": [
+    {
+      "name": "Abhishek K M",
+      "age": 23,
+      "gender": "Male",
+      "berthPreference": "Upper"
+    },
+    {
+      "name": "Krishna",
+      "age": 25,
+      "gender": "Male",
+      "berthPreference": "Middle"
+    },
+    {
+      "name": "Priya Singh",
+      "age": 28,
+      "gender": "Female",
+      "berthPreference": "Lower"
+    }
+  ],
+  "routes": [
+    {
+      "from": "Bengaluru",
+      "to": "Chennai",
+      "date": "2026-02-14"
+    },
+    {
+      "from": "Mumbai",
+      "to": "Delhi",
+      "date": "2026-02-15"
+    },
+    {
+      "from": "Kolkata",
+      "to": "Bangalore",
+      "date": "2026-02-16"
+    }
+  ],
+  "contactInfo": [
+    {
+      "email": "test@gmail.com",
+      "mobile": "8384847827"
+    },
+    {
+      "email": "user@example.com",
+      "mobile": "9876543210"
+    }
+  ],
+  "filterOptions": {
+    "quota": "General Quota",
+    "class": "AC",
+    "departureTime": "12am - 6am"
+  }
+}
