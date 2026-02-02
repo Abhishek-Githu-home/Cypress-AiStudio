@@ -1,6 +1,6 @@
-# Cypress AI Studio - Advanced Test Automation Framework
+# Cypress project built up with AI studio + Github copilot
 
-## Project Structure Overview
+## This project is completely created using advanced cypress AI studio feature, prompting and Github copilot. Created the complete E2E project within 20 mins.
 
 This is a comprehensive end-to-end testing framework built with Cypress, featuring Page Object Model (POM), BDD with Cucumber, and Mochawesome reporting.
 
