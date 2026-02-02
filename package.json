@@ -6,7 +6,8 @@
   "scripts": {
     "test": "cypress open",
     "test:headless": "cypress run",
-    "test:report": "cypress run"
+    "test:report": "cypress run",
+    "run" : "npx cypress run"
   },
   "author": "ABHISHEK K M",
   "license": "ISC",

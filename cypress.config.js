@@ -1,8 +1,9 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: 'z2guai',
   e2e: {
-    baseUrl: "https://www.makemytrip.com/",
+   // baseUrl: "https://www.makemytrip.com/",
     viewportWidth: 1280,
     viewportHeight: 720,
     defaultCommandTimeout: 10000,
@@ -12,6 +13,7 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/**/*.cy.js",
     supportFile: "cypress/support/e2e.js",
     screenshotOnRunFailure: true,
+    experimentalPromptCommand : true,
     screenshotsFolder: "cypress/screenshots",
     videosFolder: "cypress/videos",
     video: true,
